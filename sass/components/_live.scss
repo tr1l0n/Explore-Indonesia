@@ -1,0 +1,75 @@
+@import "../utils/variables";
+.live{
+    // background-image:
+    //  url(../img/livebg.png);
+    // background-repeat: no-repeat;
+    // background-position: 30%;
+    // background-size: cover;
+    height: 1450px;
+    position: relative;
+    background-color: $background-color;
+    &-bg{
+        position: absolute;
+        top: 0;
+        left:0;
+        height: 1450px;
+        opacity: 0.95;
+        transform: translateX(-450px);
+    }
+    &-video{
+        width: 314px;
+        height: 192px;
+        &-wrapper{
+            position: relative;
+            width: 314px;
+            height: 192px;
+        }
+        &-overlay{
+            position: absolute;
+            width: 314px;
+            height: 192px;
+            top: 0;
+            left: 0;
+        }
+    }
+    &-title{
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $white-color;
+            width: 280px;
+            padding-top: 50px;
+            margin-bottom: 70px;
+    }
+    &-list{
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        &-title{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: $white-color;
+                padding-top: 30px;
+        }
+        &-text{
+            font-family: DM Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: $text-color;
+                padding-top: 20px;
+        }
+    }
+}

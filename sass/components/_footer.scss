@@ -1,0 +1,57 @@
+@import "../utils/variables";
+.scroll-footer{
+    position: absolute;
+    top: 8367px;
+    left: 140px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: $primary-color;
+    padding-top: 37px;
+    padding-left: 32px;
+}
+.footer{
+    height: 723px;
+    background-color: $background-color;
+    &-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 50px;
+        &-link{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 22.94px;
+                line-height: 35.69px;
+                letter-spacing: 0.64px;
+                color: $white-color;
+        }
+    }
+    &-svg{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 35px;
+    }
+    &-rights{
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 23.24px;
+            line-height: 36.15px;
+            letter-spacing: 0.65px;
+            color: $white-color;
+            text-align: center;
+            padding-top: 30px;
+    }
+}
+.logo-footer{
+    display: flex;
+    width: 250px;
+    transform: translateX(80px);
+    padding-top: 150px;
+    &-explore{
+        color: $primary-color;
+    }
+}

@@ -1,0 +1,82 @@
+@import "../utils/variables";
+.getthere{
+    height: 950px;
+    background-color: $secondary-bg-color;
+    &-title{
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: $background-color;
+            padding-top: 20px;
+    }
+    &-tutorial{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-top: 30px;
+        &-number{
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $primary-color;
+            font-family: DM Sans;
+                font-weight: 500;
+                font-size: 26.41px;
+                line-height: 38.15px;
+                letter-spacing: 0px;
+                text-align: center;
+                vertical-align: middle;
+                color: $white-color;
+                padding-top: 7px;
+                transform: translateX(130px);
+        }
+        &-title{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: $background-color;
+        }
+        &-text{
+            font-family: DM Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: $light-text;
+        }
+        &-more{
+            font-family: DM Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                color: $primary-color;
+        }
+    }
+    &-video{
+        width: 314px;
+        height: 208px;
+        &-wrapper{
+            position: relative;
+            width: 314px;
+            height: 208px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 314px;
+            height: 208px;
+        }
+    }
+}

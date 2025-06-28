@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Indonesia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bgheadhero">
+        <header class="page-header">
+            <div class="container-alt header-flex">
+                <div class="header-logo-nav">
+                    <div class="logo">
+                        <svg width="53px" height="43px">
+                            <use href="./symbols.svg#logo" width="22px" height="43px"></use>
+                        </svg>
+                        <p class="logo-text">Explore <span class="header-logo-grad">Indonesia</span></p>
+                    </div>
+                    <nav class="header-nav">
+                        <a href="#" class="header-nav-link">DESTINATIONS</a>
+                        <a href="#" class="header-nav-link">EXPERIENCES</a>
+                        <a href="#" class="header-nav-link">ABOUT</a>
+                        <a href="#" class="header-nav-link">Gallery</a>
+                    </nav>
+                </div>
+                <div class="extra-header">
+                    <svg width="18px" height="18px">
+                        <use href="./symbols.svg#search"></use>
+                    </svg>
+                    <button class="hamburger-btn" id="hamburgerBtn" onclick="openMenu()">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="hero-line"></div>
+            <div class="hero-linered"></div>
+            <p class="hero-number">01</p>
+            <div class="hero-date">
+                <p class="hero-date-p">Fb</p>
+                <p class="hero-date-p">In</p>
+                <p class="hero-date-p">Tw</p>
+            </div>
+            <div class="container-alt">
+                <h1 class="hero-title">Explore Indonesia</h1>
+                <button class="hero-btn-travel">Start travelling</button>
+                <ul class="hero-list">
+                    <li class="hero-list-li">
+                        <p class="hero-list-number">01</p>
+                        <p class="hero-list-title">Title here</p>
+                        <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                    <li class="hero-list-li">
+                        <p class="hero-list-number">02</p>
+                        <p class="hero-list-title">Title here</p>
+                        <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                    <li class="hero-list-li">
+                        <p class="hero-list-number">03</p>
+                        <p class="hero-list-title">Title here</p>
+                        <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
+                    </li>
+                </ul>
+                <div class="hero-video-wrapper">
+                    <img src="./img/videooverlay.png" alt="videoover" class="hero-video-overlay">
+                    <video src="./img/videohero.mp4" width="314px" height="178px" controls class="hero-video"></video>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="places">
+        <div class="places-bg-walkways">
+            <div class="container">
+                <div class="places-wrapper">
+                    <img src="./img/walkways.png" alt="way" width="314px" height="232px" class="places-img">
+                    <div>
+                        <h2 class="places-title">The walkways of Indonesia spellbind</h2>
+                        <p class="places-text">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+                        <button class="places-btn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="places-bg-beach">
+            <div class="container">
+                <div class="places-wrapper">
+                    <img src="./img/beach.png" alt="beach" width="314px" height="232px" class="places-img">
+                    <div>
+                        <h2 class="places-title">Perfect beaches exude relaxation and fun</h2>
+                        <p class="places-text">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
+                        <button class="places-btn-more">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secrets">
+        <svg width="12px" height="20px" class="secrets-arrow-left">
+            <use href="./symbols.svg#arrow"></use>
+        </svg>
+        <svg width="12px" height="20px" class="secrets-arrow-right">
+            <use href="./symbols.svg#arrow"></use>
+        </svg>
+        <div class="container">
+            <h3 class="secrets-title">Explore Our Secrets</h3>
+            <img src="./img/beach.png" alt="beach" width="314px" height="200px">
+            <div class="secrets-ellipses">
+                <div class="secrets-grey-ellipse"></div>
+                <div class="secrets-grey-ellipse"></div>
+                <div class="secrets-grey-ellipse"></div>
+                <div class="secrets-red-ellipse"></div>
+                <div class="secrets-grey-ellipse"></div>
+            </div>
+        </div>
+        <div class="secrets-bg-color">
+            <div class="container">
+                <h3 class="secrets-title-extra">By The Numbers</h3>
+                <p class="secrets-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit.</p>
+                <ul class="secrets-list">
+                    <li class="secrets-list-li">
+                        <p class="secrets-list-number">100+</p>
+                        <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                    </li>
+                    <li class="secrets-list-li">
+                        <p class="secrets-list-number">43,000+</p>
+                        <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.</p>
+                    </li>
+                    <li class="secrets-list-li">
+                        <p class="secrets-list-number">30+</p>
+                        <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="hills">
+        <img src="./img/bottomlines.png" alt="lines" class="hills-bottom-lines">
+        <img src="./img/toplines.png" alt="lines" class="hills-top-lines">
+        <div class="container">
+            <h3 class="hills-title">Our hills and valleys are like nothing you’ve seen.</h3>
+            <p class="hills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet
+            elit. Donec mauris tortor, elementum sed.</p>
+            <button class="hills-learn-more">Learn More</button>
+        </div>
+    </section>
+    <section class="live">
+        <img src="./img/livebg.png" alt="bg" class="live-bg">
+        <div class="container">
+            <h4 class="live-title">Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.</h4>
+            <div class="live-video-wrapper">
+                <img src="./img/livevideooverlay.png" alt="videoover" class="live-video-overlay">
+                <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>
+            </div>
+            <ul class="live-list">
+                <li class="live-list-li">
+                    <div class="live-video-wrapper">
+                        <img src="./img/liveoverlaycountry.png" alt="videoover" class="live-video-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>  
+                    </div>
+                    <div>
+                        <h5 class="live-list-title">In The Country</h5>
+                        <p class="live-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
+                    </div>
+                </li>
+                <li class="live-list-li">
+                    <div class="live-video-wrapper">
+                        <img src="./img/liveoverlaycity.png" alt="videoover" class="live-video-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>
+                    </div>
+                    <div>
+                        <h5 class="live-list-title">In The City</h5>
+                        <p class="live-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <h4 class="gallery-title">Photo Gallery</h4>
+            <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
+            <ul class="gallery-photos">
+                <li class="gallery-photos-li">
+                    <img src="./img/momwithdaughter.png" alt="photo" width="151px" height="217px">
+                </li>
+                <li class="gallery-photos-li">
+                    <img src="./img/bluesea.png" alt="photo" width="151px" height="86px">
+                </li>
+                <li class="gallery-photos-li">
+                    <img src="./img/maninhat.png" alt="photo" width="150px" height="153px">
+                </li>
+                <li class="gallery-photos-li">
+                    <img src="./img/samurai.png" alt="photo" width="151px" height="86px">
+                </li>
+                <li class="gallery-photos-li">
+                    <img src="./img/mountains.png" alt="photo" width="151px" height="217px">
+                </li>
+                <li class="gallery-photos-li">
+                    <img src="./img/clouds.png" alt="photo" width="150px" height="153px">
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="getthere">
+        <div class="container">
+            <h4 class="getthere-title">Getting There</h4>
+            <ul class="getthere-tutorial">
+                <li class="getthere-tutorial-li">
+                    <p class="getthere-tutorial-number">1</p>
+                    <h6 class="getthere-tutorial-title">Bookings your flights</h6>
+                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-more">Show More</p>
+                </li>
+                <li class="getthere-tutorial-li">
+                    <p class="getthere-tutorial-number">2</p>
+                    <h6 class="getthere-tutorial-title">Choosing Your Hotel</h6>
+                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-more">Show More</p>
+                    <div class="getthere-video-wrapper">
+                        <img src="./img/getthereoverlay.png" alt="videoover" class="getthere-video-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="getthere-video"></video>
+                    </div>
+                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-more">Show More</p>
+                </li>
+                <li class="getthere-tutorial-li">
+                    <p class="getthere-tutorial-number">3</p>
+                    <h6 class="getthere-tutorial-title">Planning Your Experiences</h6>
+                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-more">Show More</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="scroll-footer">
+        <svg class="scroll-footer-svg">
+            <use href="./symbols.svg#arrow-footer" class="scrolll-footer-svg"></use>
+        </svg>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="logo-footer">
+                <svg width="51px" height="51px">
+                    <use href="./symbols.svg#logo" width="51px" height="51px"></use>
+                </svg>
+                <p class="logo-text"><span class="logo-footer-explore">Explore</span> Indonesia</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#" class="footer-nav-link">About</a>
+                <a href="#" class="footer-nav-link">Pricing</a>
+                <a href="#" class="footer-nav-link">Company</a>
+                <a href="#" class="footer-nav-link">Blog</a>
+            </nav>
+            <div class="footer-svg">
+                <svg width="31px" height="31px">
+                    <use href="./symbols.svg#facebook"></use>
+                </svg>
+                <svg width="31px" height="31px">
+                    <use href="./symbols.svg#linkedin"></use>
+                </svg>
+                <svg width="31px" height="31px">
+                    <use href="./symbols.svg#google"></use>
+                </svg>
+            </div>
+            <p class="footer-rights">Copyright &copy; 2019</p>
+        </div>
+    </footer>
+</body>
+</html>

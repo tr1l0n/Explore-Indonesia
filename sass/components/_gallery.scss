@@ -1,0 +1,35 @@
+@import "../utils/variables";
+.gallery{
+    height: 753px;
+    background-color: $white-color;
+    &-title{
+        padding-top: 50px;
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: $background-color;
+    }
+    &-text{
+        padding-top: 30px;
+        font-family: DM Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: $paragraph-dark;
+    }
+    &-photos{
+        width: 314px;
+        height: 520px;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,189 @@
+@import "../utils/variables";
+.hero{
+    height: 974px;
+    &-title{
+        width: 314px;
+        font-family: Roboto;
+            font-weight: 900;
+            font-size: 58.15px;
+            text-transform: uppercase;
+            color: $white-color;
+            padding-top: 67px;
+    }
+    &-btn-travel{
+        width: 315px;
+        height: 59px;
+        border-radius: 108px;
+        border: 0;
+        background-color: $primary-color;
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: rgba(255, 255, 255, 0.8);
+    }
+    &-list{
+        width: 314px;
+        height: 472px;
+        background-color: rgba(0, 0, 0, 0.6);
+        margin-top: 50px;
+        padding-left: 30px;
+        padding-top: 35px;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        &-li{
+            width: 211px;
+            height: 115px;
+        }
+        &-number{
+            font-family: Roboto;
+                font-weight: 900;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                text-transform: uppercase;
+                color: $primary-color;
+        }
+        &-title{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 26.41px;
+                line-height: 41.08px;
+                letter-spacing: 0px;
+                color: $white-color;
+        }
+        &-text{
+            font-family: DM Sans;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: $secondary-color;
+        }
+    }
+    &-video{
+        padding: 0;
+        margin: 0;
+        &-wrapper{
+            position: relative;
+            width: 314px;
+            height: 178px;
+        }
+        &-overlay{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 314px;
+            height: 178px;
+        }
+    }
+    
+}
+.hero-line{
+    display: none;
+}
+.hero-linered{
+    display: none;
+}
+.hero-number{
+    display: none;
+}
+.hero-date{
+    display: none;
+}
+@media (min-width:1920px){
+    .hero-title{
+        font-family: Roboto;
+            font-weight: 900;
+            font-size: 120px;
+            line-height: 130px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            transform: translate(250px,50px);
+    }
+    .hero-btn-travel{
+        width: 270px;
+        height: 82px;
+        transform: translate(250px,60px);
+    }
+    .hero-list{
+        padding-top: 50px;
+        padding-left: 80px;
+        gap: 150px;
+        flex-direction: row;
+        width: 1225px;
+        height: 210px;
+        transform: translate(400px,335px);
+        &-li{
+            width: 210px;
+            height: 120px;
+        }
+    }
+    .hero-video-wrapper{
+        transform: translate(1500px,80px);
+        width: 417px;
+        height: 254px;
+    }
+    .hero-video{
+        width: 417px;
+        height: 254px;
+        &-overlay{
+            width: 417px;
+            height: 254px;
+        }
+    }
+    .hero-line{
+        display: block;
+        position: absolute;
+        width: 2px;
+        height: 296px;
+        background-color: $white-color;
+        top: 300px;
+        left: 71px;
+    }
+    .hero-linered{
+        display: block;
+        width: 4px;
+        height: 100px;
+        background-color: $primary-color;
+        position: absolute;
+        top: 200px;
+        left: 70px;
+    }
+    .hero-number{
+        display: block;
+        position: absolute;
+        top: 615px;
+        left: 65px;
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            transform: rotate(270deg);
+            color: $white-color;
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+            
+    }
+    .hero-date{
+        display: flex;
+        position: absolute;
+        top: 1000px;
+        left: 15px;
+        gap: 30px;
+        transform: rotate(270deg);
+        &-p{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: $white-color;
+                box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import "../utils/variables";
+.hills{
+    height: 740px;
+    background-color: $white-color;
+    position: relative;
+    &-top-lines{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    &-bottom-lines{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    &-title{
+        font-family: DM Sans;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: black;
+            padding-top: 170px;
+    }
+    &-text{
+        font-family: DM Sans;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            text-align: center;
+            color: $paragraph-dark;
+            padding-top: 30px;
+    }
+    &-learn-more{
+        width: 315px;
+            height: 59px;
+            border-radius: 108px;
+            border: 0;
+            background-color: $primary-color;
+            font-family: DM Sans;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            color: rgba(255, 255, 255, 0.8);
+            position: absolute;
+            z-index: 2;
+            top: 550px;
+            left: 30px;
+    }
+}
