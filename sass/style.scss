@@ -43,3 +43,8 @@
     padding: 0px;
     margin: 0 auto;
 }
+@media (min-width:1920px){
+    .container{
+        max-width: 1200px;
+    }
+}

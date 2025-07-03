@@ -60,7 +60,11 @@
                 text-align: center;
                 color: $primary-color;
         }
+        &-textdesk{
+            display: none;
+        }
     }
+
     &-video{
         width: 314px;
         height: 208px;
@@ -77,6 +81,137 @@
             left: 0;
             width: 314px;
             height: 208px;
+        }
+        &-text{
+            display: none;
+        }
+        &-title{
+            display: none;
+        }
+    }
+    &-btn{
+        display: none;
+    }
+    &-line1{
+        display: none;
+    }
+    &-line2{
+        display: none;
+    }
+}
+@media (min-width:1920px){
+    .getthere{
+        height: 1432px;
+        &-title{
+            text-align: left;
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 60px;
+                line-height: 150%;
+                letter-spacing: 0%;
+        }
+        &-tutorial-number{
+            transform: translateX(0px);
+        }
+        &-tutorial-title{
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 26.41px;
+                line-height: 41.08px;
+                letter-spacing: 0px;
+                transform: translate(-340px,-50px);
+        }
+        &-tutorial-text{
+            display: none;
+        }
+        &-tutorial-more{
+            display: none;
+        }
+        &-tutorial-textdesk{
+            display: block;
+            font-family: DM Sans;
+                font-weight: 400;
+                font-size: 23.47px;
+                line-height: 38.15px;
+                letter-spacing: 0px;
+                color: $light-text;
+                transform: translate(130px,-30px);
+        }
+        &-fix-title{
+            transform: translate(-300px,-50px);
+        }
+        &-tutorial-li:nth-child(2){
+            height: 500px;
+        }
+        &-video{
+            width: 250px;
+            height: 165px;
+            &-wrapper{
+                width: 250px;
+                height: 165px;
+                transform: translate(130px,40px);
+            }
+            &-overlay{
+                width: 250px;
+                height: 165px;
+            }
+            &-title{
+                display: block;
+                font-family: DM Sans;
+                    font-weight: 700;
+                    font-size: 26.41px;
+                    line-height: 41.08px;
+                    letter-spacing: 0px;
+                    color: $background-color;
+                    transform: translate(410px,-140px);
+            }
+            &-text{
+                display: block;
+                transform: translate(410px,-140px);
+                font-family: DM Sans;
+                    font-weight: 400;
+                    font-size: 23.47px;
+                    line-height: 38.15px;
+                    letter-spacing: 0px;
+                    color: $light-text;
+                    width: 446px;
+            }
+        }
+        &-btn{
+            display: block;
+            width: 210px;
+            height: 64px;
+            border-radius: 122px;
+            background-color: $primary-color;
+            border: 0px;
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                letter-spacing: 0%;
+                text-align: center;
+                color: $white-color;
+                transform: translate(120px,0px);
+        }
+        &-line1{
+            display: block;
+            height: 221px;
+            width: 3px;
+            background-color: $light-text;
+            position: absolute;
+            top: 8783px;
+            left: 380px;
+            opacity: 30%;
+        }
+        &-line2 {
+            display: block;
+            height: 500px;
+            width: 3px;
+            background-color: $light-text;
+            position: absolute;
+            top: 9000px;
+            left: 380px;
+            opacity: 30%;
         }
     }
 }

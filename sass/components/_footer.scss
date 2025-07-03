@@ -55,3 +55,45 @@
         color: $primary-color;
     }
 }
+@media (min-width:1920px){
+    .footer{
+        height: 163px;
+        &-nav{
+            flex-direction: row;
+            padding-top: 0px;
+            transform: translate(-230px,60px);
+            &-link{
+                font-family: DM Sans;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 28px;
+                    letter-spacing: 0.5px;
+            }
+        }
+        &-svg{
+            padding-top: 30px;
+            transform: translate(60px,50px);
+        }
+        &-rights{
+            padding-top: 0px;
+            transform: translate(-170px,75px);
+            font-family: DM Sans;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: 0.5px;
+        }
+        &-flex{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .logo-footer{
+        padding-top: 0px;
+        transform: translate(60px,60px);
+    }
+    .scroll-footer{
+        top: 10000px;
+        left: 1717px;
+    }
+}

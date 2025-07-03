@@ -84,7 +84,7 @@
             <div class="container">
                 <div class="places-wrapper">
                     <img src="./img/walkways.png" alt="way" width="314px" height="232px" class="places-img">
-                    <div>
+                    <div class="places-div-info">
                         <h2 class="places-title">The walkways of Indonesia spellbind</h2>
                         <p class="places-text">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
                         <button class="places-btn-more">Learn More</button>
@@ -94,9 +94,9 @@
         </div>
         <div class="places-bg-beach">
             <div class="container">
-                <div class="places-wrapper">
+                <div class="places-wrapper reverse-wrapper">
                     <img src="./img/beach.png" alt="beach" width="314px" height="232px" class="places-img">
-                    <div>
+                    <div class="places-div-info">
                         <h2 class="places-title">Perfect beaches exude relaxation and fun</h2>
                         <p class="places-text">Lorem ipsum dolor sit amet, conse ctetur adip iscing elit. Fusce commodo magna et libero mollis rhoncus.</p>
                         <button class="places-btn-more">Learn More</button>
@@ -114,7 +114,12 @@
         </svg>
         <div class="container">
             <h3 class="secrets-title">Explore Our Secrets</h3>
-            <img src="./img/beach.png" alt="beach" width="314px" height="200px">
+            <div class="secrets-img-wrapper">
+                <img src="./img/beach.png" alt="beach" width="314px" height="200px" class="secrets-img-mobile">
+                <img src="./img/chinahouse.png" alt="house" class="secrets-img-desktop">
+                <img src="./img/children.png" alt="children" class="secrets-img-desktop">
+                <img src="./img/reliefbeauty.png" alt="relief" class="secrets-img-desktop">
+            </div>
             <div class="secrets-ellipses">
                 <div class="secrets-grey-ellipse"></div>
                 <div class="secrets-grey-ellipse"></div>
@@ -148,6 +153,8 @@
     <section class="hills">
         <img src="./img/bottomlines.png" alt="lines" class="hills-bottom-lines">
         <img src="./img/toplines.png" alt="lines" class="hills-top-lines">
+        <img src="./img/leftlines.png" alt="lines" class="hills-left-lines">
+        <img src="./img/bottomlinesdesktop.png" alt="lines" class="hills-botoom-desktop-lines">
         <div class="container">
             <h3 class="hills-title">Our hills and valleys are like nothing you’ve seen.</h3>
             <p class="hills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet
@@ -165,9 +172,9 @@
             </div>
             <ul class="live-list">
                 <li class="live-list-li">
-                    <div class="live-video-wrapper">
-                        <img src="./img/liveoverlaycountry.png" alt="videoover" class="live-video-overlay">
-                        <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>  
+                    <div class="live-video-list-wrapper">
+                        <img src="./img/liveoverlaycountry.png" alt="videoover" class="live-video-list-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="live-video-list"></video>  
                     </div>
                     <div>
                         <h5 class="live-list-title">In The Country</h5>
@@ -175,9 +182,9 @@
                     </div>
                 </li>
                 <li class="live-list-li">
-                    <div class="live-video-wrapper">
-                        <img src="./img/liveoverlaycity.png" alt="videoover" class="live-video-overlay">
-                        <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>
+                    <div class="live-video-list-wrapper">
+                        <img src="./img/liveoverlaycity.png" alt="videoover" class="live-video-list-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="live-video-list"></video>
                     </div>
                     <div>
                         <h5 class="live-list-title">In The City</h5>
@@ -193,27 +200,29 @@
             <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
             <ul class="gallery-photos">
                 <li class="gallery-photos-li">
-                    <img src="./img/momwithdaughter.png" alt="photo" width="151px" height="217px">
+                    <img src="./img/momwithdaughter.png" alt="photo" width="151px" height="217px" class="gallery-item-big">
                 </li>
                 <li class="gallery-photos-li">
-                    <img src="./img/bluesea.png" alt="photo" width="151px" height="86px">
+                    <img src="./img/bluesea.png" alt="photo" width="151px" height="86px" class="gallery-item-small">
                 </li>
                 <li class="gallery-photos-li">
-                    <img src="./img/maninhat.png" alt="photo" width="150px" height="153px">
+                    <img src="./img/maninhat.png" alt="photo" width="150px" height="153px" class="gallery-item-medium">
                 </li>
                 <li class="gallery-photos-li">
-                    <img src="./img/samurai.png" alt="photo" width="151px" height="86px">
+                    <img src="./img/samurai.png" alt="photo" width="151px" height="86px" class="gallery-item-small">
                 </li>
                 <li class="gallery-photos-li">
-                    <img src="./img/mountains.png" alt="photo" width="151px" height="217px">
+                    <img src="./img/mountains.png" alt="photo" width="151px" height="217px" class="gallery-item-big">
                 </li>
                 <li class="gallery-photos-li">
-                    <img src="./img/clouds.png" alt="photo" width="150px" height="153px">
+                    <img src="./img/clouds.png" alt="photo" width="150px" height="153px" class="gallery-item-medium">
                 </li>
             </ul>
         </div>
     </section>
     <section class="getthere">
+        <div class="getthere-line1"></div>
+        <div class="getthere-line2"></div>
         <div class="container">
             <h4 class="getthere-title">Getting There</h4>
             <ul class="getthere-tutorial">
@@ -221,25 +230,36 @@
                     <p class="getthere-tutorial-number">1</p>
                     <h6 class="getthere-tutorial-title">Bookings your flights</h6>
                     <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                    varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
                     <p class="getthere-tutorial-more">Show More</p>
                 </li>
                 <li class="getthere-tutorial-li">
                     <p class="getthere-tutorial-number">2</p>
                     <h6 class="getthere-tutorial-title">Choosing Your Hotel</h6>
                     <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris
+                        in lectus tempus, eget tincidunt lacus
+                        varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis
+                        enim.</p>
                     <p class="getthere-tutorial-more">Show More</p>
                     <div class="getthere-video-wrapper">
                         <img src="./img/getthereoverlay.png" alt="videoover" class="getthere-video-overlay">
                         <video src="./img/videohero.mp4" width="314px" controls class="getthere-video"></video>
                     </div>
+                    <p class="getthere-video-title">Travelling there</p>
+                    <p class="getthere-video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
                     <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
                     <p class="getthere-tutorial-more">Show More</p>
                 </li>
                 <li class="getthere-tutorial-li">
                     <p class="getthere-tutorial-number">3</p>
-                    <h6 class="getthere-tutorial-title">Planning Your Experiences</h6>
+                    <h6 class="getthere-tutorial-title getthere-fix-title"> Planning Your Experiences</h6>
                     <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                    varius.</p>
                     <p class="getthere-tutorial-more">Show More</p>
+                    <button class="getthere-btn">Learn More</button>
                 </li>
             </ul>
         </div>
@@ -250,7 +270,7 @@
         </svg>
     </div>
     <footer class="footer">
-        <div class="container">
+        <div class="container-alt footer-flex">
             <div class="logo-footer">
                 <svg width="51px" height="51px">
                     <use href="./symbols.svg#logo" width="51px" height="51px"></use>
