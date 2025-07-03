@@ -1,5 +1,5 @@
 @import "../utils/variables";
-.hills{
+.feature{
     height: 740px;
     background-color: $white-color;
     position: relative;
@@ -69,7 +69,7 @@
 }
 
 @media (min-width:1920px){
-    .hills{
+    .feature{
         height: 820px;
         &-bottom-lines{
             display: none;

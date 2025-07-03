@@ -14,7 +14,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="bgheadhero">
+    <div class="bg_head-hero">
         <header class="page-header">
             <div class="container-alt header-flex">
                 <div class="header-logo-nav">
@@ -40,9 +40,15 @@
                         <div class="hamburger-line"></div>
                         <div class="hamburger-line"></div>
                     </button>
+                    <button class="hamburger_btn-desktop">
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                        <div class="hamburger-line"></div>
+                    </button>
                 </div>
             </div>
         </header>
+        <div id="mainPage">
         <section class="hero">
             <div class="hero-line"></div>
             <div class="hero-linered"></div>
@@ -56,17 +62,17 @@
                 <h1 class="hero-title">Explore Indonesia</h1>
                 <button class="hero-btn-travel">Start travelling</button>
                 <ul class="hero-list">
-                    <li class="hero-list-li">
+                    <li class="hero-list-item">
                         <p class="hero-list-number">01</p>
                         <p class="hero-list-title">Title here</p>
                         <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
                     </li>
-                    <li class="hero-list-li">
+                    <li class="hero-list-item">
                         <p class="hero-list-number">02</p>
                         <p class="hero-list-title">Title here</p>
                         <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
                     </li>
-                    <li class="hero-list-li">
+                    <li class="hero-list-item">
                         <p class="hero-list-number">03</p>
                         <p class="hero-list-title">Title here</p>
                         <p class="hero-list-text">Lorem ipsum dolor sit amet et amet ist ame.</p>
@@ -134,15 +140,15 @@
                 <p class="secrets-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.Lorem ipsum dolor sit amet,
                 consectetur adipiscing elit.</p>
                 <ul class="secrets-list">
-                    <li class="secrets-list-li">
+                    <li class="secrets-list-item">
                         <p class="secrets-list-number">100+</p>
                         <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
                     </li>
-                    <li class="secrets-list-li">
+                    <li class="secrets-list-item">
                         <p class="secrets-list-number">43,000+</p>
                         <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo.</p>
                     </li>
-                    <li class="secrets-list-li">
+                    <li class="secrets-list-item">
                         <p class="secrets-list-number">30+</p>
                         <p class="secrets-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo magna et libero.</p>
                     </li>
@@ -150,16 +156,16 @@
             </div>
         </div>
     </section>
-    <section class="hills">
-        <img src="./img/bottomlines.png" alt="lines" class="hills-bottom-lines">
-        <img src="./img/toplines.png" alt="lines" class="hills-top-lines">
-        <img src="./img/leftlines.png" alt="lines" class="hills-left-lines">
-        <img src="./img/bottomlinesdesktop.png" alt="lines" class="hills-botoom-desktop-lines">
+    <section class="feature">
+        <img src="./img/bottomlines.png" alt="lines" class="feature-bottom-lines">
+        <img src="./img/toplines.png" alt="lines" class="feature-top-lines">
+        <img src="./img/leftlines.png" alt="lines" class="feature-left-lines">
+        <img src="./img/bottomlinesdesktop.png" alt="lines" class="feature-botoom-desktop-lines">
         <div class="container">
-            <h3 class="hills-title">Our hills and valleys are like nothing you’ve seen.</h3>
-            <p class="hills-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet
+            <h3 class="feature-title">Our hills and valleys are like nothing you’ve seen.</h3>
+            <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet magna commodo, tempus dolor sit amet, laoreet
             elit. Donec mauris tortor, elementum sed.</p>
-            <button class="hills-learn-more">Learn More</button>
+            <button class="feature-learn-more">Learn More</button>
         </div>
     </section>
     <section class="live">
@@ -171,7 +177,7 @@
                 <video src="./img/videohero.mp4" width="314px" controls class="live-video"></video>
             </div>
             <ul class="live-list">
-                <li class="live-list-li">
+                <li class="live-featureitem">
                     <div class="live-video-list-wrapper">
                         <img src="./img/liveoverlaycountry.png" alt="videoover" class="live-video-list-overlay">
                         <video src="./img/videohero.mp4" width="314px" controls class="live-video-list"></video>  
@@ -181,7 +187,7 @@
                         <p class="live-list-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus.</p>
                     </div>
                 </li>
-                <li class="live-list-li">
+                <li class="live-list-item">
                     <div class="live-video-list-wrapper">
                         <img src="./img/liveoverlaycity.png" alt="videoover" class="live-video-list-overlay">
                         <video src="./img/videohero.mp4" width="314px" controls class="live-video-list"></video>
@@ -199,67 +205,67 @@
             <h4 class="gallery-title">Photo Gallery</h4>
             <p class="gallery-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
             <ul class="gallery-photos">
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/momwithdaughter.png" alt="photo" width="151px" height="217px" class="gallery-item-big">
                 </li>
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/bluesea.png" alt="photo" width="151px" height="86px" class="gallery-item-small">
                 </li>
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/maninhat.png" alt="photo" width="150px" height="153px" class="gallery-item-medium">
                 </li>
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/samurai.png" alt="photo" width="151px" height="86px" class="gallery-item-small">
                 </li>
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/mountains.png" alt="photo" width="151px" height="217px" class="gallery-item-big">
                 </li>
-                <li class="gallery-photos-li">
+                <li class="gallery-photos-item">
                     <img src="./img/clouds.png" alt="photo" width="150px" height="153px" class="gallery-item-medium">
                 </li>
             </ul>
         </div>
     </section>
-    <section class="getthere">
-        <div class="getthere-line1"></div>
-        <div class="getthere-line2"></div>
+    <section class="get_there">
+        <div class="get_there-line1"></div>
+        <div class="get_there-line2"></div>
         <div class="container">
-            <h4 class="getthere-title">Getting There</h4>
-            <ul class="getthere-tutorial">
-                <li class="getthere-tutorial-li">
-                    <p class="getthere-tutorial-number">1</p>
-                    <h6 class="getthere-tutorial-title">Bookings your flights</h6>
-                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
-                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+            <h4 class="get_there-title">Getting There</h4>
+            <ul class="get_there-tutorial">
+                <li class="get_there-tutorialitem">
+                    <p class="get_there-tutorial-number">1</p>
+                    <h6 class="get_there-tutorial-title">Bookings your flights</h6>
+                    <p class="get_there-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="get_there-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
                     varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
-                    <p class="getthere-tutorial-more">Show More</p>
+                    <p class="get_there-tutorial-more">Show More</p>
                 </li>
-                <li class="getthere-tutorial-li">
-                    <p class="getthere-tutorial-number">2</p>
-                    <h6 class="getthere-tutorial-title">Choosing Your Hotel</h6>
-                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
-                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris
+                <li class="get_there-tutorial-item">
+                    <p class="get_there-tutorial-number">2</p>
+                    <h6 class="get_there-tutorial-title">Choosing Your Hotel</h6>
+                    <p class="get_there-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="get_there-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris
                         in lectus tempus, eget tincidunt lacus
                         varius. Sed euismod orci dictum faucibus malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis
                         enim.</p>
-                    <p class="getthere-tutorial-more">Show More</p>
-                    <div class="getthere-video-wrapper">
-                        <img src="./img/getthereoverlay.png" alt="videoover" class="getthere-video-overlay">
-                        <video src="./img/videohero.mp4" width="314px" controls class="getthere-video"></video>
+                    <p class="get_there-tutorial-more">Show More</p>
+                    <div class="get_there-video-wrapper">
+                        <img src="./img/getthereoverlay.png" alt="videoover" class="get_there-video-overlay">
+                        <video src="./img/videohero.mp4" width="314px" controls class="get_there-video"></video>
                     </div>
-                    <p class="getthere-video-title">Travelling there</p>
-                    <p class="getthere-video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
-                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
-                    <p class="getthere-tutorial-more">Show More</p>
+                    <p class="get_there-video-title">Travelling there</p>
+                    <p class="get_there-video-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
+                    <p class="get_there-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="get_there-tutorial-more">Show More</p>
                 </li>
-                <li class="getthere-tutorial-li">
-                    <p class="getthere-tutorial-number">3</p>
-                    <h6 class="getthere-tutorial-title getthere-fix-title"> Planning Your Experiences</h6>
-                    <p class="getthere-tutorial-text">Lorem ipsum dolor set,,,,</p>
-                    <p class="getthere-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+                <li class="get_there-tutorial-item">
+                    <p class="get_there-tutorial-number">3</p>
+                    <h6 class="get_there-tutorial-title getthere-fix-title"> Planning Your Experiences</h6>
+                    <p class="get_there-tutorial-text">Lorem ipsum dolor set,,,,</p>
+                    <p class="get_there-tutorial-textdesk">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
                     varius.</p>
-                    <p class="getthere-tutorial-more">Show More</p>
-                    <button class="getthere-btn">Learn More</button>
+                    <p class="get_there-tutorial-more">Show More</p>
+                    <button class="get_there-btn">Learn More</button>
                 </li>
             </ul>
         </div>
@@ -297,5 +303,16 @@
             <p class="footer-rights">Copyright &copy; 2019</p>
         </div>
     </footer>
+    </div>
+    <div class="menu-overlay" id="menuOverlay">
+        <button class="close-btn" onclick="closeMenu()">✕</button>
+        <nav class="menu_content">
+            <a href="#" class="menu_content-link">DESTINATIONS</a>
+            <a href="#" class="menu_content-link">EXPERIENCES</a>
+            <a href="#" class="menu_content-link">ABOUT</a>
+            <a href="#" class="menu_content-link">Gallery</a>
+        </nav>
+    <div>
+<script type="module" src="./script.js" ></script>
 </body>
 </html>

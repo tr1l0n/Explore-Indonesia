@@ -58,7 +58,67 @@
   display: none;
 }
 
+.menu-overlay {
+  display: block;
+  padding-top: 50px;
+  padding-left: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(255, 255, 255);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  z-index: 100;
+}
+
+.menu-overlay.active {
+  transform: translateX(0);
+}
+
+.menu_content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 50px;
+}
+.menu_content-link {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: DM Sans;
+  color: rgb(1, 10, 32);
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  border: 0;
+  background-color: transparent;
+  width: 100px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.hamburger_btn-desktop {
+  display: none;
+}
+
 @media screen and (min-width: 1920px) {
+  .hamburger-btn {
+    display: none;
+  }
+  .hamburger_btn-desktop {
+    display: block;
+    width: 18px;
+    height: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 0;
+  }
   .header-nav {
     display: flex;
     gap: 20px;
@@ -124,7 +184,7 @@
   gap: 30px;
   flex-direction: column;
 }
-.hero-list-li {
+.hero-list-item {
   width: 211px;
   height: 115px;
 }
@@ -210,7 +270,7 @@
     height: 210px;
     transform: translate(400px, 335px);
   }
-  .hero-list-li {
+  .hero-list-item {
     width: 210px;
     height: 120px;
   }
@@ -472,7 +532,7 @@
   justify-content: center;
   padding-top: 50px;
 }
-.secrets-list-li {
+.secrets-list-item {
   height: 125px;
   width: 275px;
 }
@@ -566,7 +626,7 @@
     padding-top: 200px;
     gap: 200px;
   }
-  .secrets-list-li {
+  .secrets-list-item {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -582,22 +642,22 @@
     padding-right: 40px;
   }
 }
-.hills {
+.feature {
   height: 740px;
   background-color: white;
   position: relative;
 }
-.hills-top-lines {
+.feature-top-lines {
   position: absolute;
   top: 0;
   left: 0;
 }
-.hills-bottom-lines {
+.feature-bottom-lines {
   position: absolute;
   bottom: 0;
   right: 0;
 }
-.hills-title {
+.feature-title {
   position: absolute;
   z-index: 4;
   top: 200px;
@@ -611,7 +671,7 @@
   text-align: center;
   color: black;
 }
-.hills-text {
+.feature-text {
   position: absolute;
   z-index: 4;
   top: 370px;
@@ -625,7 +685,7 @@
   color: rgb(111, 119, 135);
   padding-top: 30px;
 }
-.hills-learn-more {
+.feature-learn-more {
   width: 315px;
   height: 59px;
   border-radius: 108px;
@@ -644,32 +704,32 @@
   top: 550px;
   left: 30px;
 }
-.hills-left-lines {
+.feature-left-lines {
   display: none;
 }
-.hills-bottom-desktop-lines {
+.feature-bottom-desktop-lines {
   display: none;
 }
 
 @media (min-width: 1920px) {
-  .hills {
+  .feature {
     height: 820px;
   }
-  .hills-bottom-lines {
+  .feature-bottom-lines {
     display: none;
   }
-  .hills-top-lines {
+  .feature-top-lines {
     display: none;
   }
-  .hills-left-lines {
+  .feature-left-lines {
     display: block;
     position: absolute;
   }
-  .hills-bottom-desktop-lines {
+  .feature-bottom-desktop-lines {
     display: block;
     position: absolute;
   }
-  .hills-title {
+  .feature-title {
     font-family: DM Sans;
     font-weight: 700;
     font-size: 42px;
@@ -682,7 +742,7 @@
     width: 614px;
     left: 670px;
   }
-  .hills-text {
+  .feature-text {
     font-family: DM Sans;
     font-weight: 400;
     font-size: 18px;
@@ -695,7 +755,7 @@
     left: 710px;
     width: 520px;
   }
-  .hills-learn-more {
+  .feature-learn-more {
     transform: translate(800px, -80px);
     width: 210px;
     height: 64px;
@@ -824,7 +884,7 @@
     padding-top: 650px;
     margin-left: 150px;
   }
-  .live-list-li {
+  .live-list-item {
     display: flex;
     gap: 40px;
     width: 610px;
@@ -933,18 +993,18 @@
     height: 770px;
     width: 1100px;
   }
-  .gallery-photos-li:nth-child(3) {
+  .gallery-photos-item:nth-child(3) {
     order: 4;
   }
-  .gallery-photos-li:nth-child(6) {
+  .gallery-photos-item:nth-child(6) {
     order: 4;
   }
 }
-.getthere {
+.get_there {
   height: 950px;
   background-color: rgb(220, 232, 242);
 }
-.getthere-title {
+.get_there-title {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 40px;
@@ -954,13 +1014,13 @@
   color: rgb(1, 10, 32);
   padding-top: 20px;
 }
-.getthere-tutorial {
+.get_there-tutorial {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding-top: 30px;
 }
-.getthere-tutorial-number {
+.get_there-tutorial-number {
   width: 56px;
   height: 56px;
   border-radius: 50%;
@@ -976,7 +1036,7 @@
   padding-top: 7px;
   transform: translateX(130px);
 }
-.getthere-tutorial-title {
+.get_there-tutorial-title {
   font-family: DM Sans;
   font-weight: 700;
   font-size: 22px;
@@ -985,7 +1045,7 @@
   text-align: center;
   color: rgb(1, 10, 32);
 }
-.getthere-tutorial-text {
+.get_there-tutorial-text {
   font-family: DM Sans;
   font-weight: 400;
   font-size: 16px;
@@ -994,7 +1054,7 @@
   text-align: center;
   color: rgba(21, 20, 57, 0.4);
 }
-.getthere-tutorial-more {
+.get_there-tutorial-more {
   font-family: DM Sans;
   font-weight: 400;
   font-size: 16px;
@@ -1003,48 +1063,48 @@
   text-align: center;
   color: rgb(221, 34, 66);
 }
-.getthere-tutorial-textdesk {
+.get_there-tutorial-textdesk {
   display: none;
 }
-.getthere-video {
+.get_there-video {
   width: 314px;
   height: 208px;
 }
-.getthere-video-wrapper {
+.get_there-video-wrapper {
   position: relative;
   width: 314px;
   height: 208px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.getthere-video-overlay {
+.get_there-video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 314px;
   height: 208px;
 }
-.getthere-video-text {
+.get_there-video-text {
   display: none;
 }
-.getthere-video-title {
+.get_there-video-title {
   display: none;
 }
-.getthere-btn {
+.get_there-btn {
   display: none;
 }
-.getthere-line1 {
+.get_there-line1 {
   display: none;
 }
-.getthere-line2 {
+.get_there-line2 {
   display: none;
 }
 
 @media (min-width: 1920px) {
-  .getthere {
+  .get_there {
     height: 1432px;
   }
-  .getthere-title {
+  .get_there-title {
     text-align: left;
     font-family: DM Sans;
     font-weight: 700;
@@ -1052,10 +1112,10 @@
     line-height: 150%;
     letter-spacing: 0%;
   }
-  .getthere-tutorial-number {
+  .get_there-tutorial-number {
     transform: translateX(0px);
   }
-  .getthere-tutorial-title {
+  .get_there-tutorial-title {
     font-family: DM Sans;
     font-weight: 700;
     font-size: 26.41px;
@@ -1063,13 +1123,13 @@
     letter-spacing: 0px;
     transform: translate(-340px, -50px);
   }
-  .getthere-tutorial-text {
+  .get_there-tutorial-text {
     display: none;
   }
-  .getthere-tutorial-more {
+  .get_there-tutorial-more {
     display: none;
   }
-  .getthere-tutorial-textdesk {
+  .get_there-tutorial-textdesk {
     display: block;
     font-family: DM Sans;
     font-weight: 400;
@@ -1079,26 +1139,26 @@
     color: rgba(21, 20, 57, 0.4);
     transform: translate(130px, -30px);
   }
-  .getthere-fix-title {
+  .get_there-fix-title {
     transform: translate(-300px, -50px);
   }
-  .getthere-tutorial-li:nth-child(2) {
+  .get_there-tutorial-item:nth-child(2) {
     height: 500px;
   }
-  .getthere-video {
+  .get_there-video {
     width: 250px;
     height: 165px;
   }
-  .getthere-video-wrapper {
+  .get_there-video-wrapper {
     width: 250px;
     height: 165px;
     transform: translate(130px, 40px);
   }
-  .getthere-video-overlay {
+  .get_there-video-overlay {
     width: 250px;
     height: 165px;
   }
-  .getthere-video-title {
+  .get_there-video-title {
     display: block;
     font-family: DM Sans;
     font-weight: 700;
@@ -1108,7 +1168,7 @@
     color: rgb(1, 10, 32);
     transform: translate(410px, -140px);
   }
-  .getthere-video-text {
+  .get_there-video-text {
     display: block;
     transform: translate(410px, -140px);
     font-family: DM Sans;
@@ -1119,7 +1179,7 @@
     color: rgba(21, 20, 57, 0.4);
     width: 446px;
   }
-  .getthere-btn {
+  .get_there-btn {
     display: block;
     width: 210px;
     height: 64px;
@@ -1135,7 +1195,7 @@
     color: white;
     transform: translate(120px, 0px);
   }
-  .getthere-line1 {
+  .get_there-line1 {
     display: block;
     height: 221px;
     width: 3px;
@@ -1145,7 +1205,7 @@
     left: 380px;
     opacity: 30%;
   }
-  .getthere-line2 {
+  .get_there-line2 {
     display: block;
     height: 500px;
     width: 3px;
@@ -1271,7 +1331,7 @@
   text-decoration: none;
 }
 
-.bgheadhero {
+.bg_head-hero {
   height: 1104px;
   width: 100%;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.29)), url(../img/bghero.png);

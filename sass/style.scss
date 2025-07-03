@@ -2,7 +2,7 @@
 @import "./components/hero";
 @import "./components/places";
 @import "./components/secrets";
-@import "./components/hills";
+@import "./components/feature";
 @import "./components/live";
 @import "./components/gallery";
 @import "./components/getthere";
@@ -20,7 +20,7 @@
     list-style-type: none;
     text-decoration: none;
 }
-.bgheadhero{
+.bg_head-hero{
     height: 1104px;
     width: 100%;
     background-image:linear-gradient(

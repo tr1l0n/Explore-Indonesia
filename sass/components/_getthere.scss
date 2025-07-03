@@ -1,5 +1,5 @@
 @import "../utils/variables";
-.getthere{
+.get_there{
     height: 950px;
     background-color: $secondary-bg-color;
     &-title{
@@ -100,7 +100,7 @@
     }
 }
 @media (min-width:1920px){
-    .getthere{
+    .get_there{
         height: 1432px;
         &-title{
             text-align: left;
@@ -140,7 +140,7 @@
         &-fix-title{
             transform: translate(-300px,-50px);
         }
-        &-tutorial-li:nth-child(2){
+        &-tutorial-item:nth-child(2){
             height: 500px;
         }
         &-video{

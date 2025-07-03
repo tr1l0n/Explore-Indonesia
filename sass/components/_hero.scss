@@ -35,7 +35,7 @@
         display: flex;
         gap: 30px;
         flex-direction: column;
-        &-li{
+        &-item{
             width: 211px;
             height: 115px;
         }
@@ -118,7 +118,7 @@
         width: 1225px;
         height: 210px;
         transform: translate(400px,335px);
-        &-li{
+        &-item{
             width: 210px;
             height: 120px;
         }
