@@ -1,15 +1,16 @@
 @import "../utils/variables";
+@import "../utils/placeholders";
 .gallery{
     height: 753px;
     background-color: $white-color;
     &-title{
-        padding-top: 50px;
         font-family: DM Sans;
             font-weight: 700;
             font-size: 40px;
             line-height: 46px;
             letter-spacing: 0%;
             text-align: center;
+        padding-top: 50px;
             vertical-align: middle;
             color: $background-color;
     }
