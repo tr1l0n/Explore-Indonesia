@@ -4,12 +4,7 @@
     height: 950px;
     background-color: $secondary-bg-color;
     &-title{
-        font-family: DM Sans;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 46px;
-            letter-spacing: 0%;
-            text-align: center;
+        @extend %title-text;
             color: $background-color;
             padding-top: 20px;
     }
@@ -44,21 +39,11 @@
                 color: $background-color;
         }
         &-text{
-            font-family: DM Sans;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.5px;
-                text-align: center;
+            @extend %paragraph-text;
                 color: $light-text;
         }
         &-more{
-            font-family: DM Sans;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.5px;
-                text-align: center;
+            @extend %paragraph-text;
                 color: $primary-color;
         }
         &-textdesk{

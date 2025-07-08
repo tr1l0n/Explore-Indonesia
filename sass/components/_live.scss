@@ -45,24 +45,17 @@
         }
     }
     &-title{
-        font-family: DM Sans;
-            font-weight: 700;
-            font-size: 40px;
-            line-height: 46px;
-            letter-spacing: 0%;
-            text-align: center;
+        @extend %title-text;
             color: $white-color;
             width: 280px;
             padding-top: 50px;
             margin-bottom: 70px;
     }
     &-list{
+        @extend %flex-element;
         padding-top: 70px;
-        display: flex;
         flex-direction: column;
         gap: 30px;
-        justify-content: center;
-        align-items: center;
         &-title{
             font-family: DM Sans;
                 font-weight: 700;
@@ -74,12 +67,7 @@
                 padding-top: 30px;
         }
         &-text{
-            font-family: DM Sans;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.5px;
-                text-align: center;
+            @extend %paragraph-text;
                 color: $text-color;
                 padding-top: 20px;
         }

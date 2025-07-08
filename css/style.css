@@ -642,6 +642,24 @@
     padding-right: 40px;
   }
 }
+.feature-title {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.feature-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .feature {
   height: 740px;
   background-color: white;
@@ -658,12 +676,6 @@
   right: 0;
 }
 .feature-title {
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 46px;
-  letter-spacing: 0%;
-  text-align: center;
   position: absolute;
   z-index: 4;
   top: 200px;
@@ -676,12 +688,6 @@
   z-index: 4;
   top: 370px;
   width: 314px;
-  font-family: DM Sans;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.5px;
-  text-align: center;
   color: rgb(111, 119, 135);
   padding-top: 30px;
 }
@@ -761,6 +767,24 @@
     height: 64px;
   }
 }
+.feature-title {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.feature-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .live {
   height: 1450px;
   position: relative;
@@ -918,6 +942,24 @@
     height: 151px;
   }
 }
+.feature-title {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.feature-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .gallery {
   height: 753px;
   background-color: white;
@@ -1000,6 +1042,24 @@
     order: 4;
   }
 }
+.feature-title {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.feature-text {
+  font-family: DM Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
 .get_there {
   height: 950px;
   background-color: rgb(220, 232, 242);

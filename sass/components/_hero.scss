@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/placeholders";
 .hero{
     height: 1004px;
     &-title{
@@ -57,11 +58,7 @@
                 color: $white-color;
         }
         &-text{
-            font-family: DM Sans;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 24px;
-                letter-spacing: 0.5px;
+            @extend %paragraph-text;
                 color: $secondary-color;
         }
     }
